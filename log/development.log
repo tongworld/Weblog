@@ -1,0 +1,12 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20120214160414)
+  [4;35;1mSQL (140.0ms)[0m   [0mCREATE TABLE posts (id NUMBER(38) NOT NULL PRIMARY KEY, title varchar2(4000), created_at DATE, updated_at DATE) [0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCREATE SEQUENCE posts_seq START WITH 10000[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120214160414')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20120214160414)
+Migrating to AddBodyToPost (20120214162857)
+  [4;35;1mSQL (63.0ms)[0m   [0mALTER TABLE posts ADD body clob[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120214162857')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
